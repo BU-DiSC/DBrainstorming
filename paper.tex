@@ -1,0 +1,49 @@
+\documentclass{sig-alternate-10pt}
+
+\usepackage{lipsum} %can be removed 
+\usepackage{balance}
+
+%please do not alter the template and do not use the "pslatex" or the "times" packages
+
+\sloppy
+\paperwidth=8.5in
+\paperheight=11in
+\pagestyle{empty}
+
+\title{Column Title}
+
+\numberofauthors{1}
+\author{
+\alignauthor
+Author Name\\
+       \affaddr{Affiliation}\\
+       \email{name@email.edu}
+}
+
+
+
+\begin{document}
+\maketitle{}
+
+\noindent\textbf{[Content]} 
+\lipsum[2-4]
+
+\noindent\textbf{[Content]} 
+\lipsum[2-4]\cite{item}
+
+
+
+\balance
+%please include the contents of the final bibfile below
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+
+\bibitem{item1}
+Author1, Author2.
+\newblock Title.
+\newblock {\em Conference Name}, (Cname), YYYY.
+
+
+\end{thebibliography}
+% \balance{}
+\end{document}
